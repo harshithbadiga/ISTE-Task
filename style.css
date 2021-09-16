@@ -69,3 +69,22 @@ button:hover{
     background-color: white;
     color: darkblue;
 }
+
+.nav-icons{
+    width: 2rem;
+    margin-right: -1rem;
+    border-radius: 1rem;
+
+}
+
+.brand-logo{
+    text-decoration: none;
+    color: white;
+}
+.logo a{
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: white;
+}
