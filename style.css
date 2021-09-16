@@ -80,6 +80,7 @@ button:hover{
 .brand-logo{
     text-decoration: none;
     color: white;
+    width: 3rem;
 }
 .logo a{
     text-decoration: none;
