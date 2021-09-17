@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -6,86 +6,173 @@
 
 
 
-nav{
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+    flex-wrap: wrap;
     background-color: #0D1524;
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.tabs a{
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 
+}
+
+.nav-ul li a {
+    display: inline-block;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
-
 }
 
-.m-container{
-    background-color:#182439 ;
-    padding-top: 2rem ;
+a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.hamburger:focus {
+    outline: none;
+}
+
+.brand-logo {
+    width: 3rem;
+    border-radius: 1rem;
+    margin-right: -2rem;
+}
+
+.tab-icon {
+    margin: 1rem;
+}
+
+
+
+.test {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.m-container {
+    background-color: #182439;
+    padding-top: 2rem;
     padding: 2rem;
-}
-
-.img-card{
-image-rendering: auto;
-height: 5rem;
-width: 5rem;
-;
 
 }
 
-.card{
-    background-color: #243B55;
-    color: #D2D7DC;
-    padding: 1.5rem;
-    border-radius: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
+.grid {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+    color: white;
+    padding: 2rem;
 
-    margin-left: 10rem;
 }
 
-.card-heading{
-    color: #FEFEFE;
-    padding-top: 1rem;
+
+.article {
+    box-shadow: -4px 4px 17px 9px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: -4px 4px 17px 9px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -4px 4px 17px 9px rgba(0, 0, 0, 0.56);
+    border-radius: 1rem;
+    padding: 1rem;
+
 }
 
-button{
-    background-color: darkblue ;
+.card-heading {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+.img-card {
+    image-rendering: auto;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+
+.btn{
+    background-color: darkblue;
     color: white;
     border: none;
     border-radius: 0.5rem;
     font-weight: bold;
     font-size: 1.3rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
 
 }
 
 .text-large{
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    padding: 1rem;
 }
 
-button:hover{
+
+.btn:hover{
     background-color: white;
     color: darkblue;
 }
 
-.nav-icons{
-    width: 2rem;
-    margin-right: -1rem;
-    border-radius: 1rem;
+@media screen and (max-width:768px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
 
+    .hamburger {
+        display: block;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
 }
 
-.brand-logo{
-    text-decoration: none;
-    color: white;
-    width: 3rem;
-}
-.logo a{
-    text-decoration: none;
-}
 
-.logo a:hover{
-    color: white;
+@media (max-width:768px) {
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .m-container{
+        background-color:#182439 ;
+        padding-top: 2rem ;
+        padding: 1rem; 
+    }
+
+    .article{
+        width: 90%;
+
+        padding: 1.5rem;
+    }
 }
