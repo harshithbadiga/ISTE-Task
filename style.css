@@ -163,6 +163,7 @@ a {
 @media (max-width:768px) {
     .grid{
         grid-template-columns: repeat(1,1fr);
+        width: 90%;
     }
     .m-container{
         background-color:#182439 ;
@@ -171,7 +172,7 @@ a {
     }
 
     .article{
-        width: 90%;
+
 
         padding: 1.5rem;
     }
