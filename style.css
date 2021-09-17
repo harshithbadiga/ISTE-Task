@@ -78,13 +78,13 @@ a {
 
 .m-container {
     background-color: #182439;
-    padding-top: 2rem;
+
     padding: 2rem;
 
 }
 
 .grid {
-    margin: 3rem;
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 3rem;
